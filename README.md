@@ -50,11 +50,10 @@ void UpdateTheme(object sender, System.EventArgs e)
 
 The following images demonstrates the theming of datagrid.
 
-**Material Dark**
+#### Material Dark
 
 ![SfDataGrid with DarkTheme](SfDataGrid_DarkTheme.png)
-
-**Material Light**
+#### Material Light
 ![SfDataGrid with DarkTheme](SfDataGrid_LightTheme.png)
 
 [View sample in GitHub](https://github.com/SyncfusionExamples/How-to-change-the-theme-in-.NET-MAUI-DataGrid)
