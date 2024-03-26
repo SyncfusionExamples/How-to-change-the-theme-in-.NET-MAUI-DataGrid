@@ -4,7 +4,7 @@ Syncfusion [themes](https://help.syncfusion.com/maui/themes/themes) allow you to
 
 By default, DataGrid offers support for both light and dark themes through the inclusion of a `SyncfusionThemeResourceDictionary`.
 
-## XAML
+##### XAML
 To apply themes to your application, merge the `SyncfusionThemeResourceDictionary` item.
 
 ```XML
@@ -23,8 +23,10 @@ To apply themes to your application, merge the `SyncfusionThemeResourceDictionar
 </Application>
 ```
 
-## How to toggle between light theme and dark theme
+#### How to toggle between light theme and dark theme
 Refer to the following example code to [switch](https://help.syncfusion.com/maui/themes/howto) between light and dark themes in DataGrid.
+
+##### C#
 ```C#
 void UpdateTheme(object sender, System.EventArgs e)
 {
@@ -50,10 +52,10 @@ void UpdateTheme(object sender, System.EventArgs e)
 
 The following images demonstrates the theming of datagrid.
 
-#### Material Dark
+##### Material Dark
 
 ![SfDataGrid with DarkTheme](SfDataGrid_DarkTheme.png)
-#### Material Light
+##### Material Light
 ![SfDataGrid with DarkTheme](SfDataGrid_LightTheme.png)
 
 [View sample in GitHub](https://github.com/SyncfusionExamples/How-to-change-the-theme-in-.NET-MAUI-DataGrid)
