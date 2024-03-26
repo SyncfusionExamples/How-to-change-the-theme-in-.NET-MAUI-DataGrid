@@ -9,9 +9,13 @@
         <local:EmployeeViewModel x:Name="viewModel"/>
     </ContentPage.BindingContext>
 
-    <syncfusion:SfDataGrid ItemsSource="{Binding Employees}" AutoGenerateColumnsMode="None" ColumnWidthMode="Auto">
+    <syncfusion:SfDataGrid ItemsSource="{Binding Employees}"
+                           AutoGenerateColumnsMode="None" 
+                           HeaderGridLinesVisibility="Both" 
+                           GridLinesVisibility="Both"
+                           ColumnWidthMode="Auto">
         <syncfusion:SfDataGrid.Columns>
-            <syncfusion:DataGridNumericColumn MappingName="EmployeeID" HeaderText="Employee ID"/>
+            <syncfusion:DataGridNumericColumn MappingName="EmployeeID" Format="d" HeaderText="Employee ID"/>
             <syncfusion:DataGridTextColumn MappingName="Name"/>
             <syncfusion:DataGridTextColumn MappingName="ContactID" HeaderText="Contact ID"/>
         </syncfusion:SfDataGrid.Columns>
