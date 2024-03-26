@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:SfDataGridSample"
+             xmlns:syncfusion="clr-namespace:Syncfusion.Maui.DataGrid;assembly=Syncfusion.Maui.DataGrid"
+             x:Class="SfDataGridSample.MainPage">
+
+    <ContentPage.BindingContext>
+        <local:EmployeeViewModel x:Name="viewModel"/>
+    </ContentPage.BindingContext>
+
+    <syncfusion:SfDataGrid ItemsSource="{Binding Employees}"
+                           AutoGenerateColumnsMode="None" 
+                           HeaderGridLinesVisibility="Both" 
+                           GridLinesVisibility="Both"
+                           ColumnWidthMode="Auto">
+        <syncfusion:SfDataGrid.Columns>
+            <syncfusion:DataGridNumericColumn MappingName="EmployeeID" Format="d" HeaderText="Employee ID"/>
+            <syncfusion:DataGridTextColumn MappingName="Name"/>
+            <syncfusion:DataGridTextColumn MappingName="ContactID" HeaderText="Contact ID"/>
+        </syncfusion:SfDataGrid.Columns>
+    </syncfusion:SfDataGrid>
+
+
+</ContentPage>
